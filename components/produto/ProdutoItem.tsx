@@ -11,7 +11,8 @@ export interface ProdutoItemProps {
 
 export default function ProdutoItem (props: ProdutoItemProps) {
     const { produto } = props
-    return <Link 
+    return (
+        <Link 
         href={`/produto/${props.produto.id}`}
         className="flex flex-col bg-violet-dark border border-white/10"        
     >
@@ -61,4 +62,5 @@ export default function ProdutoItem (props: ProdutoItemProps) {
         </div>
 
     </Link>
+    )
 }
